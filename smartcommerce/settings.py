@@ -96,9 +96,9 @@ WSGI_APPLICATION = 'smartcommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'smartcommerce',
-        'USER': 'smartcommerce',
-        'PASSWORD': 'hoanganhlamno1',
+        'NAME': 'phuongha',
+        'USER': 'phuongha',
+        'PASSWORD': 'phuongha',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
