@@ -25,7 +25,7 @@ SECRET_KEY = 'u09j9k8#%puh4qxy5b)eg2e68tq3xa-cc)g$^(1don+0u#emio'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -210,6 +210,15 @@ REST_AUTH_REGISTER_SERIALIZERS = {
 
 OLD_PASSWORD_FIELD_ENABLED = True
 
-CORS_ORIGIN_WHITELIST = [
-    "http://127.0.0.1:3000",
-]
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+    '*',
+)
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
